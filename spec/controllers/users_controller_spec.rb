@@ -58,7 +58,7 @@ describe UsersController do
       end
       
       it "should not create a user" do
-        lamda do
+        lambda do
           post :create, :user => @attr
         end.should_not change(User, :count)
       end
