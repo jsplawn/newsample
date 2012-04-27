@@ -8,4 +8,13 @@
   
   <%= link_to rail1, root_path %>
 
+
+<li>
+  User: 
+  //<% if current_user %>
+    <%= current_user.name %>
+  //<% else %>
+    (not logged in)
+  //<% end %>
+</li>
 </footer>
