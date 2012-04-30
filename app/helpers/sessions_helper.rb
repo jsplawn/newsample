@@ -40,6 +40,15 @@ module SessionsHelper
     self.current_user = nil
   end
   
+  def gottoken?
+    !remember_token.nil?
+  end
+  
+  def gotuserfromtoken?
+    !user_from_remember_token.nil?
+  end
+  
+  
   
   
   private

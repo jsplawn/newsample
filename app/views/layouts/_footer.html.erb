@@ -11,8 +11,8 @@
 
 <li>
   User: 
-  <% if current_user %>
-    <%= current_user.name %>
+  <% if !current_user.nil? %>
+    <%= current_user.id %>
   <% else %>
     (not logged in)
   <% end %>
