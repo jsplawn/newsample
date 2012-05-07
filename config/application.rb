@@ -14,7 +14,8 @@ if defined?(Bundler)
   # >>>>>>>>(used briefly)  Bundler.require *Rails.groups(:assets => %w(development test))
   # If you want your assets lazily compiled in production, use this line
   # Bundler.require(:default, :assets, Rails.env)
-  Bundler.require(:default, Rails.env) # >>>>>>> added instead ?!? 
+  # Bundler.require(:default, Rails.env) # >>>>>>> added instead ?!? 
+  Bundler.require *Rails.groups(:assets)
 end
 
 module SampleApp
