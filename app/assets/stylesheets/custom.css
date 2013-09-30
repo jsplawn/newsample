@@ -178,7 +178,7 @@ div.field, div.actions {
   font-size: 12ppx;
   margin: -7px;
   background-color: #c00;
-  color #fff;
+  color: #fff;
 }
 
 #error_explanation p {
